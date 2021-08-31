@@ -1,0 +1,32 @@
+user registration
+-----------------
+user_id (PK) (one to one)
+user_name
+password
+
+ User_table (one to many)
+ -------------
+ user-id (PK)
+ user_name
+ email
+ fist_name
+ last_name
+ phone_number
+ address
+
+ categories_table  (Many to many)
+ ---------------
+ category_no (PK)
+ help_wanted
+ giveaway
+ furniture
+ personals
+ for_sale
+
+ ad  (one to many)
+ ------
+ category_no (PK)
+ user_id(FK)
+ title
+ description
+ category
